@@ -1,11 +1,14 @@
 ---
 name: ratchet-conformance
-description: Raise goxsd's pinned W3C XSD conformance baseline by one coherent test cluster while preserving all prior passes. Use after the conformance harness exists for scheduled ratcheting, suite triage, disputed-test classification, or normative-ledger coverage.
+description: Provide the conformance procedure within $implement-issue for one ready goxsd conformance issue: raise the pinned W3C XSD baseline by one coherent cluster while preserving all prior passes. Use only after the conformance harness exists.
 ---
 
 # Ratchet Conformance
 
-Improve one bounded cluster and preserve auditable test classifications.
+Use this procedure only within the selected `kind:conformance` issue in the
+unified `$implement-issue` workflow; do not schedule it as separate delivery
+automation. Improve one bounded cluster and preserve auditable test
+classifications.
 
 ## Workflow
 
