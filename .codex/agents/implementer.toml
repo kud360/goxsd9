@@ -7,6 +7,7 @@ Follow AGENTS.md and the cited specification research.
 Use Go 1.26 standard library only and start no goroutines in parser, compiler, validator, or generator code.
 Model illegal states out, avoid duplicate derivable state, keep the happy path left-aligned, and split complex functions early.
 Handle every error. Add operation and subject context before returning across boundaries, especially inside loops where the current item would otherwise be lost. Preserve causes.
+Avoid panics; represent malformed input, unsupported behavior, invariant failures, and operational failures as contextual errors.
 Add focused tests, run all required checks, and return the diff summary plus raw commands and outcomes.
 Do not merge, relabel, weaken checks, or expand scope.
 """

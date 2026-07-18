@@ -28,6 +28,8 @@ Build `goxsd` toward XSD 1.1 conformance. Read `docs/architecture.md`,
   losing which item failed.
 - Validation violations must carry a stable code, specification URL and anchor,
   input location, and underlying cause when one exists.
+- Avoid panics. Return contextual errors for malformed input, unsupported
+  behavior, violated invariants, and operational failures.
 - Return structured errors to callers. Use caller-provided `slog` logging only
   for optional diagnostics; logging is not error handling.
 - Preserve causes with `Unwrap`/`%w` so `errors.Is` and `errors.As` work.
