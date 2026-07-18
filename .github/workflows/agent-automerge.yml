@@ -1,0 +1,45 @@
+name: Agent automerge
+
+on:
+  pull_request_target:
+    types: [labeled, reopened, synchronize]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: agent-automerge-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  invalidate:
+    if: >-
+      github.event.action != 'labeled' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      contains(github.event.pull_request.labels.*.name, 'agent:automerge')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove stale evaluator authorization
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr edit "$PR_URL" --remove-label agent:automerge
+
+  merge:
+    if: >-
+      github.event.action == 'labeled' &&
+      github.event.label.name == 'agent:automerge' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      contains(github.event.pull_request.labels.*.name, 'agent:automerge')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge evaluated head
+        env:
+          EVALUATED_HEAD: ${{ github.event.pull_request.head.sha }}
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          test "$(gh pr view "$PR_URL" --json headRefOid --jq .headRefOid)" = "$EVALUATED_HEAD"
+          test "$(gh pr view "$PR_URL" --json labels --jq '.labels | any(.name == "agent:automerge")')" = true
+          gh pr merge "$PR_URL" --squash --delete-branch --match-head-commit "$EVALUATED_HEAD"

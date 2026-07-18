@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Project"
+  short_description: "Run architecture, style, and user-facing reviews"
+  default_prompt: "Use $review-project to review architecture, style, documentation, and CLI usability."

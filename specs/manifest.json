@@ -1,0 +1,44 @@
+{
+  "documents": [
+    {
+      "id": "xsd11-structures",
+      "url": "https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/"
+    },
+    {
+      "id": "xsd11-datatypes",
+      "url": "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/"
+    },
+    {
+      "id": "xpath20",
+      "url": "https://www.w3.org/TR/2010/REC-xpath20-20101214/"
+    },
+    {
+      "id": "xpath-functions-operators",
+      "url": "https://www.w3.org/TR/2010/REC-xpath-functions-20101214/"
+    },
+    {
+      "id": "xpath-datamodel",
+      "url": "https://www.w3.org/TR/2010/REC-xpath-datamodel-20101214/"
+    },
+    {
+      "id": "xml10",
+      "url": "https://www.w3.org/TR/2008/REC-xml-20081126/"
+    },
+    {
+      "id": "xml11",
+      "url": "https://www.w3.org/TR/2006/REC-xml11-20060816/"
+    },
+    {
+      "id": "xml-names",
+      "url": "https://www.w3.org/TR/2009/REC-xml-names-20091208/"
+    },
+    {
+      "id": "xml-infoset",
+      "url": "https://www.w3.org/TR/2004/REC-xml-infoset-20040204/"
+    },
+    {
+      "id": "precision-decimal",
+      "url": "https://www.w3.org/TR/2011/NOTE-xsd-precisionDecimal-20110609/"
+    }
+  ]
+}

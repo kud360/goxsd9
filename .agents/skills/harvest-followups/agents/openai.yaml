@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harvest Follow-ups"
+  short_description: "Route development findings into the backlog"
+  default_prompt: "Use $harvest-followups to classify and record follow-up work from the current changes."

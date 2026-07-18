@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ratchet Conformance"
+  short_description: "Raise the pinned XSD conformance baseline"
+  default_prompt: "Use $ratchet-conformance to improve the XSD suite pass baseline without regressions."
