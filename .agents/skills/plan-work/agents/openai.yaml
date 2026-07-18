@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Work"
+  short_description: "Reconcile roadmap and queue executable work"
+  default_prompt: "Use $plan-work to reconcile the roadmap and prepare the next ready issues."

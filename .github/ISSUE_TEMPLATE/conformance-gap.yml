@@ -1,0 +1,44 @@
+name: Conformance gap
+description: A reproducible XSD suite failure or uncovered normative requirement
+title: "conformance: "
+body:
+  - type: input
+    id: suite
+    attributes:
+      label: Suite revision and test IDs
+      description: Include the pinned commit and smallest affected cluster.
+    validations:
+      required: true
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Classification
+      options:
+        - Failing behavior
+        - Unsupported behavior
+        - Harness error
+        - Disputed test
+        - Requirement without suite coverage
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reproduction and evidence
+      description: Include commands, expected outcome, actual outcome, and raw error context.
+    validations:
+      required: true
+  - type: textarea
+    id: specification
+    attributes:
+      label: Normative references
+      description: Link exact W3C rules and relevant errata.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Include focused tests and the expected baseline movement.
+    validations:
+      required: true
