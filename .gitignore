@@ -26,8 +26,9 @@ profile.cov
 go.work
 go.work.sum
 
-# Downloaded specification cache
+# Downloaded and generated specification mirrors
 /specs/cache/
+/specs/markdown/
 
 # env file
 .env

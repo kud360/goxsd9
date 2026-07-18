@@ -2,43 +2,63 @@
   "documents": [
     {
       "id": "xsd11-structures",
-      "url": "https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/"
+      "url": "https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/structures.html",
+      "sha256": "5ffb773f81fb81cfc9ac54dfb871c333cefb12fbdffe4caeb28170054b21fc6a",
+      "output": "xsd11-structures.md"
     },
     {
       "id": "xsd11-datatypes",
-      "url": "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/"
+      "url": "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html",
+      "sha256": "cc2ae20cdeab02600c73fd13f1cc31dbbdd61f62aa455026fa84388b540443b8",
+      "output": "xsd11-datatypes.md"
     },
     {
       "id": "xpath20",
-      "url": "https://www.w3.org/TR/2010/REC-xpath20-20101214/"
+      "url": "https://www.w3.org/TR/2010/REC-xpath20-20101214/Overview.html",
+      "sha256": "8f570fb5f09ee66b5a645a7d7e3f185d6314379eb2c4d80ac944dc66d2fe8e0a",
+      "output": "xpath20.md"
     },
     {
       "id": "xpath-functions-operators",
-      "url": "https://www.w3.org/TR/2010/REC-xpath-functions-20101214/"
+      "url": "https://www.w3.org/TR/2010/REC-xpath-functions-20101214/Overview.html",
+      "sha256": "6d85cf91b013989979335bb6c2d21f48ab193f8debe5ad67647bcbc6651d721f",
+      "output": "xpath-functions-operators.md"
     },
     {
       "id": "xpath-datamodel",
-      "url": "https://www.w3.org/TR/2010/REC-xpath-datamodel-20101214/"
+      "url": "https://www.w3.org/TR/2010/REC-xpath-datamodel-20101214/Overview.html",
+      "sha256": "fa4b37cca135eadc8ef8be46337c41aacb920eb58a91546d46285d397b14926d",
+      "output": "xpath-datamodel.md"
     },
     {
       "id": "xml10",
-      "url": "https://www.w3.org/TR/2008/REC-xml-20081126/"
+      "url": "https://www.w3.org/TR/2008/REC-xml-20081126/Overview.html",
+      "sha256": "f58a4b9e1e5b8bac13fb55c4e5c7c8c5e2c176aa45ee68e2f1ab2498511927ec",
+      "output": "xml10.md"
     },
     {
       "id": "xml11",
-      "url": "https://www.w3.org/TR/2006/REC-xml11-20060816/"
+      "url": "https://www.w3.org/TR/2006/REC-xml11-20060816/Overview.html",
+      "sha256": "f71e4b35bc21e61320a6e8ba4d8dc2f49a2e8eae8fa221b760d08f633c65847d",
+      "output": "xml11.md"
     },
     {
       "id": "xml-names",
-      "url": "https://www.w3.org/TR/2009/REC-xml-names-20091208/"
+      "url": "https://www.w3.org/TR/2009/REC-xml-names-20091208/Overview.html",
+      "sha256": "b4a649e5fdab9852d68eca21442481599164949bcdee5549f2ec7e38fb3cd3a8",
+      "output": "xml-names.md"
     },
     {
       "id": "xml-infoset",
-      "url": "https://www.w3.org/TR/2004/REC-xml-infoset-20040204/"
+      "url": "https://www.w3.org/TR/2004/REC-xml-infoset-20040204/Overview.html",
+      "sha256": "316b1b0df49a40dd4cab7ea403dd4f9e5f0d073803b2a7663ebddc33fffebc3e",
+      "output": "xml-infoset.md"
     },
     {
       "id": "precision-decimal",
-      "url": "https://www.w3.org/TR/2011/NOTE-xsd-precisionDecimal-20110609/"
+      "url": "https://www.w3.org/TR/2011/NOTE-xsd-precisionDecimal-20110609/precisionDecimal.html",
+      "sha256": "e4dd98b3e61c48932243b0ad432d4d8640e8b5caa0d222c9650f7cc39a5b0060",
+      "output": "precision-decimal.md"
     }
   ]
 }
