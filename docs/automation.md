@@ -30,8 +30,9 @@ requires a fresh evaluator verdict.
 
 ## Automatic merge
 
-Configure GitHub to protect `main`, require the `CI / test` check, allow squash
-merges, and prevent force pushes. After required CI succeeds and the read-only
+Configure GitHub to protect `main`, require the `test` check from the `CI`
+workflow, allow squash merges, and prevent force pushes. After required CI
+succeeds and the read-only
 evaluator returns an unqualified pass for that head, the orchestrator applies
 `agent:automerge`. The workflow performs one SHA-bound merge. It creates no
 persistent auto-merge request. Any new commit or reopen revokes the label and
