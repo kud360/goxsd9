@@ -5,8 +5,8 @@ description: Reconcile the goxsd long-term roadmap, GitHub milestones or epic is
 
 # Plan Work
 
-Keep a small, executable queue without duplicating mutable state across planning
-layers.
+Keep an evidence-backed executable queue without duplicating mutable state
+across planning layers.
 
 ## Workflow
 
@@ -18,9 +18,10 @@ layers.
    - leaf issues own acceptance criteria.
 3. Find stale links, duplicates, blocked items, completed outcomes, and findings
    not yet harvested. Preserve useful history.
-4. Keep three to seven leaf issues labeled `status:ready`, ordered by dependency
-   and smallest useful end-to-end progress. Do not create filler work to reach a
-   number.
+4. During each weekday-morning planning run, maintain at least 10 leaf issues
+   labeled `status:ready`, ordered by dependency and smallest useful end-to-end
+   progress. Do not create filler work to reach the target: every ready issue
+   must satisfy the readiness evidence in the next step.
 5. Before marking a leaf issue ready, link one milestone or epic parent and
    include an observable outcome,
    acceptance tests, exact specification anchors where applicable, constraints,

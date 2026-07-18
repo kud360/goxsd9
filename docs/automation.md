@@ -8,13 +8,18 @@ main checkout for read-only planning runs.
 
 | Task | Suggested cadence | Prompt |
 | --- | --- | --- |
-| Plan work | Daily | `Use $plan-work. Reconcile the roadmap and keep a small ready queue.` |
-| Implement | Every few hours | `Use $implement-issue. Deliver one ready issue completely.` |
-| Conformance | Daily after the harness exists | `Use $ratchet-conformance. Raise one bounded conformance cluster.` |
-| Project review | Weekly | `Use $review-project. File only actionable, non-duplicate findings.` |
+| Plan work | Weekday morning | `Use $plan-work. Reconcile the roadmap and maintain at least 10 evidence-backed ready items.` |
+| Ready-issue delivery | Hourly | `Use $implement-issue. Deliver exactly one safe status:ready issue—normal or conformance—through research, implementation, raw verification, harvest, fresh independent evaluation, CI, and SHA-bound PASS merge gating.` |
+| Project review | Weekly | `Use $review-project. File only actionable, non-duplicate findings, then harvest them within the same run.` |
 
-`$implement-issue` and `$ratchet-conformance` run `$harvest-followups` before
-delivery. A scheduled run with no safe ready work exits without inventing work.
+The hourly delivery automation is the only implementation automation. Its
+repository-local workflow selects exactly one safe `status:ready` issue. A
+conformance cluster is scoped to that selected issue's acceptance criteria.
+The workflow performs research, implementation, raw verification, follow-up
+harvest, and fresh independent evaluation after every material change. It waits
+for required CI and permits SHA-bound merge only after `PASS`. A scheduled run
+with no safe ready work exits without inventing work. There is no separate
+conformance, ratchet, or harvest automation.
 
 ## Independent roles
 

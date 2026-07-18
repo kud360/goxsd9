@@ -61,9 +61,10 @@ manual and scheduled use. Invoke them with `$skill-name` in a Codex prompt, not
 as shell commands:
 
 - `$plan-work` reconciles the roadmap and prepares the next issues.
-- `$implement-issue` delivers one ready issue through an independently
-  evaluated pull request and automatic merge.
-- `$ratchet-conformance` raises the conformance baseline.
+- `$implement-issue` delivers one ready normal or conformance issue through an
+  independently evaluated pull request and automatic merge.
+- `$ratchet-conformance` applies conformance controls only within the selected
+  `$implement-issue` run.
 - `$harvest-followups` routes discoveries to the correct planning layer.
 - `$review-project` runs architecture, style, documentation, and CLI reviews.
 
